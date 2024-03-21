@@ -43,7 +43,7 @@ def detect_contour(path):
       cv2.rectangle(src, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
       # 外接矩形毎に画像を保存
-      cv2.imwrite('C:/Users/ryo46/python/mahjong_match/img' + str(detect_count) + '.jpg', src[y:y + h, x:x + w])
+      cv2.imwrite('C:/Users/ryo46/python/mahjong_match/img/result' + str(detect_count) + '.jpg', src[y:y + h, x:x + w])
 
       detect_count = detect_count + 1
 
@@ -55,4 +55,4 @@ def detect_contour(path):
   cv2.destroyAllWindows()
 
 if __name__ == '__main__':
-  detect_contour('C:/Users/ryo46/python/mahjong_match/img/img.jpg')
+  detect_contour('C:/Users/ryo46/python/mahjong_match/img/test.jpg')
