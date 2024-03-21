@@ -21,7 +21,7 @@ def detect_contour(path):
   #   contours : [領域][Point No][0][x=0, y=1]
   #   cv2.CHAIN_APPROX_NONE: 中間点も保持する
   #   cv2.CHAIN_APPROX_SIMPLE: 中間点は保持しない
-  contours, hierarchy = cv2.findContours(bw, cv2.RETR_LIST, cv2.CHAIN_APPROX_NONE)
+  contours, hierarchy = cv2.findContours(bw, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
 
   # 矩形検出された数（デフォルトで0を指定）
   detect_count = 0
@@ -43,7 +43,7 @@ def detect_contour(path):
       cv2.rectangle(src, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
       # 外接矩形毎に画像を保存
-      cv2.imwrite('C:/Users/ryo46/python/mahjong_match/img/result' + str(detect_count) + '.jpg', src[y:y + h, x:x + w])
+      cv2.imwrite('C:/Users/ryo46/python/mahjong_match/result/' + str(detect_count) + '.jpg', src[y:y + h, x:x + w])
 
       detect_count = detect_count + 1
 
@@ -55,4 +55,4 @@ def detect_contour(path):
   cv2.destroyAllWindows()
 
 if __name__ == '__main__':
-  detect_contour('C:/Users/ryo46/python/mahjong_match/img/test.jpg')
+  detect_contour('C:/Users/ryo46/python/mahjong_match/img/test3.jpg')
