@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotation>
+  <folder>XXX</folder>
+  <filename>XXX</filename>
+  <source>
+    <database>XXX</database>
+    <annotation>XXX</annotation>
+    <image>XXX</image>
+    <flickrid>XXX</flickrid>
+  </source>
+  <owner>
+    <flickrid>XXX</flickrid>
+    <flickrid>XXX</flickrid>
+  </owner>
+  <size>
+    <width>XXX</width>
+    <height>XXX</height>
+    <depth>XXX</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>XXX</name>
+    <pose>XXX</pose>
+    <truncated>0</truncated>
+    <difficult>1</difficult>
+    <bndbox>
+      <xmin>XXX</xmin>
+      <ymin>XXX</ymin>
+      <xmax>XXX</xmax>
+      <ymax>XXX</ymax>
+    </bndbox>
+  </object>
+</annotation>
